@@ -77,13 +77,13 @@ export default class KeyboardSpacer extends Component {
     }
 
     let animationConfig = defaultAnimation;
-    if (Platform.OS === 'ios') {
-      animationConfig = LayoutAnimation.create(
-        event.duration,
-        LayoutAnimation.Types[event.easing],
-        LayoutAnimation.Properties.opacity,
-      );
-    }
+    // if (Platform.OS === 'ios') {
+    //   animationConfig = LayoutAnimation.create(
+    //     event.duration,
+    //     LayoutAnimation.Types[event.easing],
+    //     LayoutAnimation.Properties.opacity,
+    //   );
+    // }
     LayoutAnimation.configureNext(animationConfig);
 
     // get updated on rotation
@@ -100,13 +100,13 @@ export default class KeyboardSpacer extends Component {
 
   resetKeyboardSpace(event) {
     let animationConfig = defaultAnimation;
-    if (Platform.OS === 'ios') {
-      animationConfig = LayoutAnimation.create(
-        event.duration,
-        LayoutAnimation.Types[event.easing],
-        LayoutAnimation.Properties.opacity,
-      );
-    }
+    // if (Platform.OS === 'ios') {
+    //   animationConfig = LayoutAnimation.create(
+    //     event.duration,
+    //     LayoutAnimation.Types[event.easing],
+    //     LayoutAnimation.Properties.opacity,
+    //   );
+    // }
     LayoutAnimation.configureNext(animationConfig);
 
     this.setState({
